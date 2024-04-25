@@ -26,7 +26,7 @@ def forward(speed, duration):
     GPIO.output(in2,GPIO.LOW)
     
     # Set speed
-    p.ChangeDutyCycle(speed=0)
+    p.ChangeDutyCycle(speed)
     sleep(duration)
     
 def reverse(speed, duration=0):
